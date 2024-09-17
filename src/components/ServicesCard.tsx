@@ -1,7 +1,19 @@
 import Link from "next/link";
 import React from "react";
 
-const ServicesCard = ({ title, description, iconName, href }) => {
+interface ServicesCardProps {
+  title: string;
+  description: string;
+  iconName: string;
+  href: string;
+}
+
+const ServicesCard: React.FC<ServicesCardProps> = ({
+  title,
+  description,
+  iconName,
+  href,
+}) => {
   return (
     <div className="w-full rounded-2xl h-auto bg-heroBg p-6 sm:p-8 text-left shadow-[0px_3px_15px_0px_#00000008]">
       <div className="w-12 h-12 rounded-full bg-[#3A5F561A] flex items-center justify-center mb-3">

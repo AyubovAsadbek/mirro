@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-const StoreCard = ({ image, title, description }) => {
+interface StoreCardProps {
+  image: string;
+  title: string;
+  description: string;
+}
+
+const StoreCard: React.FC<StoreCardProps> = ({ image, title, description }) => {
   return (
     <div className="w-full h-auto bg-white rounded-b-2xl overflow-hidden">
       <Image
