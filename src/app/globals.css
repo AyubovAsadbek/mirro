@@ -2,26 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@import "../../public/fonts.css";
+@import "../../public/icons/icons.css";
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SourceSerifPro";
+}
+
+.container {
+  @apply max-w-[1248px] px-6 sm:px-10 mx-auto;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .bg-top-right-radial {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(58, 95, 86, 0.55) 0%,
+      rgba(58, 95, 86, 0) 100%
+    );
+  }
+  .bg-bottom-left-radial {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(184, 125, 88, 0.8) 0%,
+      rgba(184, 125, 88, 0) 100%
+    );
+  }
+  .services-radial {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(58, 95, 86, 0.376) 0%,
+      rgba(58, 95, 86, 0) 100%
+    );
+  }
+  .store-radial {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(219, 52, 59, 0.296) 0%,
+      rgba(219, 52, 59, 0) 100%
+    );
   }
 }
