@@ -19,6 +19,8 @@ const config: Config = {
         graySecondary: "#292C32",
         heroBg: "#F4F3F0",
         redPrimary: "#DB343B",
+        redSecondary: "#B87D58",
+        whitePrimary: "#FAFAFC",
       },
       backgroundImage: {
         "top-right-radial":
