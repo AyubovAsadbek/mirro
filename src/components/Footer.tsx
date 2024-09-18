@@ -3,6 +3,24 @@ import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
+  const IconItems = [
+    {
+      iconName: "icon-linkedin",
+      href: "/",
+    },
+    {
+      iconName: "icon-facebook",
+      href: "/",
+    },
+    {
+      iconName: "icon-instagram",
+      href: "/",
+    },
+    {
+      iconName: "icon-twitter",
+      href: "/",
+    },
+  ];
   return (
     <footer className="bg-graySecondary py-[50px] sm:py-[100px]">
       <div className="container flex flex-col items-center">
@@ -178,26 +196,15 @@ const Footer = () => {
           </p>
           {/* Footer Icons List */}
           <ul className="flex gap-5 items-center mt-5 sm:mt-0">
-            <li>
-              <Link href={"/"}>
-                <i className="icon-linkedin text-white text-2xl"></i>
-              </Link>
-            </li>
-            <li>
-              <Link href={"/"}>
-                <i className="icon-facebook text-white text-2xl"></i>
-              </Link>
-            </li>
-            <li>
-              <Link href={"/"}>
-                <i className="icon-instagram text-white text-2xl"></i>
-              </Link>
-            </li>
-            <li>
-              <Link href={"/"}>
-                <i className="icon-twitter text-white text-2xl"></i>
-              </Link>
-            </li>
+            {IconItems.map((item, index) => (
+              <li key={index}>
+                <Link href={item.href} className="group">
+                  <i
+                    className={`${item.iconName} transition-all group-hover:text-redPrimary text-white text-2xl`}
+                  ></i>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
