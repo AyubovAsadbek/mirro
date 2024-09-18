@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="sm:py-[100px] py-[50px]  bg-heroBg relative overflow-hidden">
       <div className="container flex justify-between items-center gap-10 flex-col  md:flex-row">
         {/* Hero Left block */}
-        <div className="md:max-w-[532px]">
+        <div className="md:max-w-[532px] relative z-[1]">
           <h1 className="text-4xl lg:text-5xl text-grayPrimary leading-[40px] lg:leading-[57px] max-w-[440px] mb-[11px]">
             Hi, I&apos;m James Mirro & I&apos;m a photographer.
           </h1>
@@ -34,7 +34,7 @@ const Hero = () => {
         />
 
         {/* Gradients */}
-        <div className="w-[564px] h-[494px] bg-top-right-radial absolute sm:top-[-50px] sm:right-[-100px] top-[-200px] right-[-300px]"></div>
+        <div className="w-[564px] h-[494px] bg-top-right-radial absolute sm:top-[-50px] sm:right-[-100px] top-[-200px] right-[-300px] "></div>
         <div className="w-[734px] h-[813px] bg-bottom-left-radial absolute sm:bottom-[-350px] sm:left-[-222px] bottom-[-400px] left-[-400px]"></div>
       </div>
     </section>

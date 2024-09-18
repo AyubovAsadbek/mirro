@@ -75,7 +75,7 @@ const Services = () => {
           ornare, eros dolor interdum nulla.
         </p>
         {/* Services Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 relative z-[1]">
           {servicesCards.map((card, index) => (
             <ServicesCard key={index} {...card} />
           ))}
