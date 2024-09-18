@@ -1,10 +1,10 @@
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?qnwa6a");
-  src: url("fonts/icomoon.eot?qnwa6a#iefix") format("embedded-opentype"),
-    url("fonts/icomoon.ttf?qnwa6a") format("truetype"),
-    url("fonts/icomoon.woff?qnwa6a") format("woff"),
-    url("fonts/icomoon.svg?qnwa6a#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?x2oces");
+  src: url("fonts/icomoon.eot?x2oces#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?x2oces") format("truetype"),
+    url("fonts/icomoon.woff?x2oces") format("woff"),
+    url("fonts/icomoon.svg?x2oces#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -53,18 +53,21 @@
 .icon-cart:before {
   content: "\e908";
 }
-.icon-facebook:before {
+.icon-close:before {
   content: "\e909";
 }
-.icon-hamburger:before {
+.icon-facebook:before {
   content: "\e90a";
 }
-.icon-instagram:before {
+.icon-hamburger:before {
   content: "\e90b";
 }
-.icon-linkedin:before {
+.icon-instagram:before {
   content: "\e90c";
 }
-.icon-twitter:before {
+.icon-linkedin:before {
   content: "\e90d";
+}
+.icon-twitter:before {
+  content: "\e90e";
 }

@@ -30,7 +30,7 @@ const Hero = () => {
           alt="Hero Image"
           width={300}
           height={600}
-          className="lg:w-[500px] w-[400px] lg:h-[773px] h-[550px] object-cover rounded-3xl shadow-[0px_3px_15px_0px_#0000001A]"
+          className="lg:w-[500px] w-[400px] lg:h-[773px] h-[500px] object-cover rounded-3xl shadow-[0px_3px_15px_0px_#0000001A]"
         />
 
         {/* Gradients */}

@@ -151,9 +151,9 @@ const Footer = () => {
           </ul>
           {/* Footer Email Form */}
           <form className="lg:max-w-[427px] w-full">
-            <label className="text-[14px] leading-[19.6px] tracking-[3px] uppercase text-redSecondary">
+            <h4 className="text-[14px] leading-[19.6px] tracking-[3px] uppercase text-redSecondary">
               Newsletter
-            </label>
+            </h4>
             <p className="text-base text-whitePrimary leading-[22px] mb-2">
               Subscribe to my newsletter where I share news about upcoming
               printings and preset sales.
